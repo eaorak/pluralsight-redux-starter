@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import HomePage from "./home/HomePage";
+import CoursesPage from "./course/CoursesPage";
 import AboutPage from "./about/AboutPage";
 
 // The Main component renders one of the three provided
@@ -12,6 +13,7 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path="/" component={HomePage} />
+      <Route path="/courses" component={CoursesPage} />
       <Route path="/about" component={AboutPage} />
     </Switch>
   </main>
